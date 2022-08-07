@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vue3 Intro</title>
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+  <!-- Vue3 App -->
+  <div id="app">
+    <header>
+      <h1>Sample Product Page</h1>
+      <h3>My Cart ({{cartQuantity}})</h3>
+    </header>
+    <product-display name="Vue Socks" price="$5" shipping="Free" @add-to-cart="addToCart"/>
+  </div>
+  <!-- Import Vue3 -->
+  <script src="https://unpkg.com/vue@3"></script>
+  <!-- Import Vue3 main.js -->
+  <script src="main.js"></script>
+  <!-- Import Components -->
+  <script src="components/ProductDisplay.js"></script>
+  <!-- Mount App -->
+  <script>
+    app.mount('#app')
+  </script>
+</body>
+</html>
